@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu-wrap">
+            <div id="lantern-menu">
+                <div id="lantern-menu-wrap">
+                    <h1 class="rdr-text lantern-menu-header">Lantern Options</h1>
+                    <img src="./images/wanted_location_divider.png" alt="divider" id="divider">
+                    <label for="brightness-slider" class="rdr-text">Brightness</label>
+                    <input type="range" min="0.0" max="10.0" value="1.0" class="slider" id="brightness-slider">
+                    <label for="red-slider" class="rdr-text">Red Value</label>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="red-slider">
+                    <label for="green-slider" class="rdr-text">Green Value</label>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="green-slider">
+                    <label for="blue-slider" class="rdr-text">Blue Value</label>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="blue-slider">
+                    <img src="./images/wanted_location_divider.png" alt="divider" id="divider">
+                    <input type="button" value="Done" id="close-button" class="rdr-text">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

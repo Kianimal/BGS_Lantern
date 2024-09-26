@@ -1,0 +1,134 @@
+@font-face {
+    font-family: crock;
+    src: url(fonts/crock.ttf) format('truetype');
+}
+
+html {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+html * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.rdr-text{
+    font-family: crock;
+    user-select: none;
+}
+
+#container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#menu-wrap {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    /* width: 25%; */
+}
+
+#lantern-menu {
+    width: 576px;
+    height: 384px;
+    background-image: url('./images/hud_menu_4a.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lantern-menu-header {
+    font-weight: 900;
+    text-align: center;
+}
+
+#divider {
+    max-width: 100%;
+    margin: 10px 0px;
+}
+
+#close-button {
+    font-size: 24px;
+    cursor: pointer;
+    background: unset;
+    color: white;
+    border: none;
+    width: fit-content;
+    align-self: center;
+    font-weight: 900;
+}
+
+#close:hover {
+    color: red;
+}
+
+#lantern-menu-wrap {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: #666; /* Grey background */
+    outline: none; /* Remove outline */
+    /* opacity: 0.9; Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 2.5px;
+    margin: 10px 0;
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 7.5px;
+}
+
+#brightness-slider {
+    background-image: linear-gradient(to right, #666, #ddd);
+}
+
+#red-slider {
+    background: linear-gradient(to right, #666, rgb(163, 15, 15));
+}
+
+#green-slider {
+    background: linear-gradient(to right, #666, rgb(15, 163, 15));
+}
+
+#blue-slider {
+    background: linear-gradient(to right, #666, rgb(15, 15, 163));
+}
+
+label {
+    font-weight: 900;
+}
